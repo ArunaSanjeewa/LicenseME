@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.redhunter.licenseme.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+    <RelativeLayout
+        android:id="@+id/content_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="20">
+
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_01" />
+
+                                <FrameLayout
+                                    android:layout_width="190dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="19"
+
+                                    android:background="@color/MENU_COLOR_01"
+
+                                    >
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+
+                                        android:clickable="false"
+                                        android:text="Personal Details"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+
+                                    <ImageButton
+                                        android:id="@+id/btnRegister"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+                                        android:layout_marginLeft="3dp"
+
+                                        android:background="@drawable/ic_person_outline_black_24dp"
+                                        android:backgroundTint="@color/MENU_ICON_TINT"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:onClick="toPersonalDetails"
+
+                                        />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="20">
+
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_02" />
+
+                                <FrameLayout
+                                    android:layout_width="190dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="19"
+                                    android:background="@color/MENU_COLOR_02">
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:clickable="false"
+                                        android:text="Registation Details"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+
+                                    <ImageButton
+                                        android:id="@+id/btnFilling"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+                                        android:background="@drawable/ic_details_black_24dp"
+                                        android:backgroundTint="@color/MENU_ICON_TINT"
+                                        android:onClick="toRegistationDetails"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"/>
+                                </FrameLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="20">
+
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_03" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="19"
+                                    android:background="@color/MENU_COLOR_03">
+
+                                    <ImageButton
+                                        android:id="@+id/btnShipment"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+
+                                        android:background="@drawable/ic_payment_black_24dp"
+                                        android:onClick="toPayment"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:backgroundTint="@color/MENU_ICON_TINT" />
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:clickable="false"
+                                        android:text="Payments"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="20">
+
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_04" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="19"
+                                    android:background="@color/MENU_COLOR_04">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:clickable="false"
+                                        android:text="Lession List"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+
+                                    <ImageButton
+                                        android:id="@+id/btnReceive"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+
+                                        android:background="@drawable/ic_list_black_24dp"
+                                        android:backgroundTint="@color/MENU_ICON_TINT"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"
+
+                                        android:onClick="toLessonList" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:weightSum="20"
+                                android:orientation="horizontal"
+                                >
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_05" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/MENU_COLOR_05">
+
+                                    <ImageButton
+                                        android:id="@+id/btnSales"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+
+                                        android:background="@drawable/ic_ondemand_video_black_24dp"
+                                        android:onClick="toTutorials"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:backgroundTint="@color/MENU_ICON_TINT" />
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:clickable="false"
+                                        android:text="Tutorials"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:weightSum="20"
+                                >
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/MENU_COLOR_SUB_06" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="19"
+                                    android:background="@color/MENU_COLOR_06">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:clickable="false"
+                                        android:text="Customer Care"
+                                        android:textStyle="normal"
+                                        android:textColor="@color/MENU_ICON_TINT"
+                                        android:textSize="20sp"
+                                        android:paddingBottom="40dp" />
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:layout_marginTop="120dp"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/MENU_ICON_TINT" />
+
+                                    <ImageButton
+                                        android:id="@+id/btnJetty"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_below="@+id/imageButton2"
+
+                                        android:background="@drawable/ic_help_outline_black_24dp"
+                                        android:onClick="toCustomerCare"
+                                        android:layout_marginTop="50dp"
+                                        android:layout_gravity="center|top"
+                                        android:backgroundTint="@color/MENU_ICON_TINT" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="License ME"-->
+        <!--android:textSize="20dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</android.support.constraint.ConstraintLayout>

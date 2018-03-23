@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.redhunter.licenseme.Tutorials"
+    tools:showIn="@layout/activity_tutorials">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="80">
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:background="@color/round_corner_progress_bar_background_default"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="79"
+                        android:background="@color/colorAccent"
+
+                        >
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_gravity="center|top"
+                            android:layout_marginTop="120dp"
+                            android:layout_height="0.5dp"
+                            android:background="@color/round_corner_progress_bar_background_default" />
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/tsigns"
+
+                            android:icon="@drawable/ic_time_to_leave_black_24dp"
+                            android:onClick="toSign"
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center|top"/>
+
+                        <TextView
+
+
+                            android:text="Road Signs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:clickable="false"
+                            android:textStyle="normal"
+                            android:textSize="24sp"
+                            android:paddingBottom="30dp"/>
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="80">
+                        <View
+                            android:layout_width="7dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:background="@color/round_corner_progress_bar_background_default"
+                            />
+
+                        <FrameLayout
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_weight="79"
+                            android:background="@color/colorAccent"
+
+                            >
+                            <View
+                                android:layout_width="50dp"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="120dp"
+                                android:layout_height="0.5dp"
+                                android:background="@color/round_corner_progress_bar_background_default" />
+
+                            <ImageButton
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/tvideos"
+
+                                android:icon="@drawable/ic_ondemand_video_black_24dp"
+                                android:onClick="toVideo"
+
+
+                                android:layout_marginTop="50dp"
+                                android:layout_gravity="center|top"/>
+
+                            <TextView
+
+
+                                android:text="Videos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:clickable="false"
+                                android:textStyle="normal"
+                                android:textSize="24sp"
+                                android:paddingBottom="30dp"/>
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

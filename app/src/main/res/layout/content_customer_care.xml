@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.redhunter.licenseme.CustomerCare"
+    tools:showIn="@layout/activity_customer_care">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_no"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/contact_no1"
+            android:layout_alignLeft="@+id/contact_no21"
+            android:layout_alignStart="@+id/contact_no21"
+            android:text="Hot Line"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/contact_no1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignLeft="@+id/contact_no"
+            android:layout_alignStart="@+id/contact_no"
+            android:text="071-4864798"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"
+            tools:foreground="@color/colorAccent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/contact_no21"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/contact_no11"
+            android:layout_alignLeft="@+id/contact_no11"
+            android:layout_alignStart="@+id/contact_no11"
+            android:text="Email"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <TextView
+            android:id="@+id/contact_no11"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imageButton1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/imageButton1"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:text="info@licenseme.lk"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageButton"
+            android:layout_marginTop="68dp"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            tools:foreground="@color/colorAccent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+            android:layout_alignTop="@+id/twitter"
+            android:layout_toLeftOf="@+id/contact_no11"
+            android:layout_toStartOf="@+id/contact_no11"
+            android:background="@drawable/facebook"
+            tools:foreground="@color/colorAccent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <ImageButton
+            android:id="@+id/twitter"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="102dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton"
+            android:background="@drawable/twitter"
+            tools:foreground="@color/colorAccent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="377dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="W">#ffffff</color>
+
+    <color name="MENU_COLOR_01">#288479</color>
+    <color name="MENU_COLOR_SUB_01">#0d655a</color>
+    <color name="MENU_COLOR_02">#d0773f</color>
+    <color name="MENU_COLOR_SUB_02">#d15809</color>
+    <color name="MENU_COLOR_03">#cc5439</color>
+    <color name="MENU_COLOR_SUB_03">#e32a28</color>
+    <color name="MENU_COLOR_04">#4f6165</color>
+    <color name="MENU_COLOR_SUB_04">#344650</color>
+    <color name="MENU_COLOR_05">#3b8c49</color>
+    <color name="MENU_COLOR_SUB_05">#0d763b</color>
+    <color name="MENU_COLOR_06">#8a548e</color>
+    <color name="MENU_COLOR_SUB_06">#a928d8</color>
+
+    <color name="MENU_COLOR_07">#ce9f29</color>
+    <color name="MENU_COLOR_SUB_07">#f6bb42</color>
+    <color name="MENU_COLOR_09">#c55394</color>
+    <color name="MENU_COLOR_SUB_09">#ba0d73</color>
+    <color name="MENU_COLOR_08">#5c9320</color>
+    <color name="MENU_COLOR_SUB_08">#20923e</color>
+    <color name="MENU_ICON_TINT">#f5f5f5</color>
+</resources>
